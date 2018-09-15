@@ -7,6 +7,9 @@ from decimal import Decimal
 from selenium import webdriver
 from selenium.webdriver.common.action_chains import ActionChains
 
+"""
+Used to scrape data from xe.com - aren't any free currency data repositories.
+"""
 
 def fill_missing_timesteps(incomplete_data):
     complete_data = []
