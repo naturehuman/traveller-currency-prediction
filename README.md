@@ -1,4 +1,4 @@
-# traveller-currency-prediction
+# Traveller-Currency-Prediction
 An application that forecasts future currency exchange rates based on previous exchange rate patterns using a recurrent neural netwo preventork that makes use of LSTM cells. (Credit to @LilianWeng for tutorial on stock prediction, training logic is based off of that)
 
 ## Usage
