@@ -4,7 +4,7 @@ import tensorflow as tf
 class LstmRNN(object):
 	def __init__(self, sess,
 				 lstm_size=128,
-				 num_layers=1,
+				 num_layers=3,
 				 num_steps=30,
 				 input_size=1):
 
@@ -66,9 +66,6 @@ class LstmRNN(object):
 
 		self.optimizer = tf.train.RMSPropOptimizer(self.learning_rate).\
 			minimize(self.loss, name="rmsprop_optimizer")
-
-		# Returns all trainable parameters
-		self.t_vars = tf.trainable_variables()
 
 		# Creates a saver to save the model
 		self.saver = tf.train.Saver()
